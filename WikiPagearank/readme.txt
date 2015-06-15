@@ -1,5 +1,6 @@
 
 課題１,2のソースコード：nxwiki_kai.py, nxwiki_kai4.py
+        scipy.sparceを利用したコード（全データを利用に修正版）：nxwiki_kai7.py
 	データベース上に各ページのページランク,ページID,順位を保存（rank, Id, pageRank）
 	データベース上にページID、名前、存命人物の順位を保存（Id,Name,rank）
 	nx, scipy.sparce による上位10名の名前をコンソール上に出力
