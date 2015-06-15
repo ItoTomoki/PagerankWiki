@@ -16,7 +16,7 @@ def get_pagerank(M, alpha=0.85, return_P=False):
         array of index in ascending order of PageRank
     """
     n = len(M)
-    M += np.ones([n, n]) * alpha / n
+    M = (np.ones([n, n]) * (1-alpha) / n + M * alpha)
     la, v = scipy.sparse.linalg.eigs(M, k=1)
     P = v[:, 0]
     P /= P.sum()
