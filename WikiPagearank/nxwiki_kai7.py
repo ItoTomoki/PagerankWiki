@@ -81,11 +81,11 @@ for id_from in Id_from:
 print j
 #g.add_edge(IdDict[9462],IdDict[589960])
 #g.add_edge(IdDict[295386],IdDict[21222])
-
+"""
 la, v = scipy.sparse.linalg.eigs(Matrix, k=1)
 print 1
 print v
-
+"""
 print "Rank | ID | p"
 print "--get_pagerank--------------------"
 r, p = get_pagerank(Matrix, alpha=0.85, return_P=True)
